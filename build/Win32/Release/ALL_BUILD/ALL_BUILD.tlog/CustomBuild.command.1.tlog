@@ -1,0 +1,10 @@
+^C:\USERS\XUCONGK\DESKTOP\CDP-MONITOR\WRAPPER\CMAKELISTS.TXT
+setlocal
+D:\Cmake\bin\cmake.exe -SC:/Users/xucongk/Desktop/cdp-monitor/wrapper -BC:/Users/xucongk/Desktop/cdp-monitor/wrapper/build --check-stamp-file C:/Users/xucongk/Desktop/cdp-monitor/wrapper/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

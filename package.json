@@ -1,0 +1,22 @@
+{
+    "name": "wrapper",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "cmake-js compile"
+    },
+    "devDependencies": {
+        "cmake-js": "7.4.0",
+        "node-addon-api": "^8.7.0"
+    },
+    "binary": {
+        "napi_versions": [
+            8
+        ]
+    },
+    "cmake-js": {
+        "runtime": "node",
+        "arch": "ia32"
+    }
+}
