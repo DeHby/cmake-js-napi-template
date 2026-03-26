@@ -51,12 +51,6 @@ node -p "process.versions.napi"
 * `runtime`（node / electron）
 * `arch`（x64 / ia32 / arm64）
 
-例如：
-
-```bash
-cmake-js compile --arch=x64
-```
-
 ---
 
 ## 🚀 构建
